@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "YouTubeDLWin (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "YouTubeDLWin (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
