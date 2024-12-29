@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="YouTubeDLWin.DownloadLists"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:YouTubeDLWin"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <StackPanel>
+        <TextBlock 
+           Text="Download Progress"
+        />
+        <ListView x:ConnectionId='2' 
+        x:Name="DownloadList">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsStackPanel 
+                    ItemsUpdatingScrollMode="KeepLastItemInView" />
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate 
+                                               >
+                    <StackPanel Orientation="Vertical">
+                        <ProgressBar
+                            x:Name="ProgressBar"
+                            Value="{Binding DownloadProgress}"
+                            Width="200"/>
+
+                        <TextBlock 
+                            x:Name="DownloadSpeed"
+                            Text="{Binding DownloadSpeed}"
+                            TextWrapping="WrapWholeWords" />
+
+                        <TextBlock 
+                            x:Name="Output"
+                            Text="{Binding Output}"
+                            TextWrapping="WrapWholeWords" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackPanel>
+</Page>
+

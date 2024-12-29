@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Window
     x:Class="YouTubeDLWin.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -12,48 +13,51 @@
     <StackPanel
         Orientation="Vertical"
         Padding="15">
-        <TextBlock 
+
+
+        <TextBlock
             Text="Welcome to YouTubeDLWin"
-            FontSize="25"/>
-        
-        <TextBlock 
+            FontSize="25" />
+
+        <TextBlock
             Padding="0 10 10 25"
-            Text="Place a YouTube Url in the TextBox"/>
-        
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Text="Place a YouTube Url in the TextBox" />
+
+
         <TextBox x:ConnectionId='2'
-        x:Name="UrlVideo"
-        />
-        
-        
-        <Button x:ConnectionId='3' 
-        x:Name="DownloadButton"
-        Margin="0 20 0 0"
-        Padding="10"
-        Content="Download"
-        HorizontalAlignment="Center">
+            x:Name="UrlVideo" />
+
+
+        <Button x:ConnectionId='3'
+            x:Name="DownloadButton"
+            Margin="0 20 0 0"
+            Content="Download"
+            HorizontalAlignment="Center">
             <Button.Flyout>
                 <Flyout>
                     <StackPanel>
 
-                        <CheckBox x:ConnectionId='4' 
-                            x:Name="videoAudioChoice"
+                        <CheckBox x:ConnectionId='4'
+                            x:Name="VideoAudioChoice"
                                                 
-                            Content="Download Video or Audio"/>
+                            Content="Download Video or Audio" />
 
-                        <CheckBox x:ConnectionId='5' 
-                            x:Name="subtitles"
+                        <CheckBox x:ConnectionId='5'
+                            x:Name="Subtitles"
                             Visibility="Collapsed"
-                            Content="Include Subtitles"/>
-                        
-                        <CheckBox x:ConnectionId='6' 
-                            x:Name="embedChapters"
+                            Content="Include Subtitles" />
+
+                        <CheckBox x:ConnectionId='6'
+                            x:Name="EmbedChapters"
                             Visibility="Collapsed"
-                            Content="Add Chapters to Video"/>
-                        
-                        
-                        <Button x:ConnectionId='7' 
+                            Content="Add Chapters to Video" />
+
+
+                        <Button x:ConnectionId='7'
                                                 
-                            Content="Download"/>
+                            Content="Download" />
                     </StackPanel>
                 </Flyout>
             </Button.Flyout>

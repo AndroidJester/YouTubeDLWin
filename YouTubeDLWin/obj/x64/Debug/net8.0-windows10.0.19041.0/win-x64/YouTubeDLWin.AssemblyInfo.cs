@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YouTubeDLWin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db95b28655b5fea14ed9a927709bd3e9ab499983")]
 [assembly: System.Reflection.AssemblyProductAttribute("YouTubeDLWin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YouTubeDLWin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

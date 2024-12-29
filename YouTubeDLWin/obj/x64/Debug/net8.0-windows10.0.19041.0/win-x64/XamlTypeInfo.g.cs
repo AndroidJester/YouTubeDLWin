@@ -226,7 +226,7 @@ namespace YouTubeDLWin.YouTubeDLWin_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[17];
+            _typeNameTable = new string[22];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -238,14 +238,19 @@ namespace YouTubeDLWin.YouTubeDLWin_XamlTypeInfo
             _typeNameTable[8] = "YouTubeDLWin.DownloadDialogPage";
             _typeNameTable[9] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[11] = "YouTubeDLWin.FirstRunDialogPage";
-            _typeNameTable[12] = "YouTubeDLWin.MainWindow";
-            _typeNameTable[13] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[14] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[15] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[16] = "Int32";
+            _typeNameTable[11] = "YouTubeDLWin.DownloadLists";
+            _typeNameTable[12] = "Microsoft.UI.Xaml.Controls.ProgressRing";
+            _typeNameTable[13] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[14] = "Double";
+            _typeNameTable[15] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
+            _typeNameTable[16] = "YouTubeDLWin.FirstRunDialogPage";
+            _typeNameTable[17] = "YouTubeDLWin.MainWindow";
+            _typeNameTable[18] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[19] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[20] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[21] = "Int32";
 
-            _typeTable = new global::System.Type[17];
+            _typeTable = new global::System.Type[22];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -257,12 +262,17 @@ namespace YouTubeDLWin.YouTubeDLWin_XamlTypeInfo
             _typeTable[8] = typeof(global::YouTubeDLWin.DownloadDialogPage);
             _typeTable[9] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[11] = typeof(global::YouTubeDLWin.FirstRunDialogPage);
-            _typeTable[12] = typeof(global::YouTubeDLWin.MainWindow);
-            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[14] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[15] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[16] = typeof(global::System.Int32);
+            _typeTable[11] = typeof(global::YouTubeDLWin.DownloadLists);
+            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
+            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[14] = typeof(global::System.Double);
+            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
+            _typeTable[16] = typeof(global::YouTubeDLWin.FirstRunDialogPage);
+            _typeTable[17] = typeof(global::YouTubeDLWin.MainWindow);
+            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[20] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[21] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -300,16 +310,21 @@ namespace YouTubeDLWin.YouTubeDLWin_XamlTypeInfo
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
         private object Activate_4_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
         private object Activate_8_DownloadDialogPage() { return new global::YouTubeDLWin.DownloadDialogPage(); }
-        private object Activate_12_MainWindow() { return new global::YouTubeDLWin.MainWindow(); }
-        private object Activate_14_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_11_DownloadLists() { return new global::YouTubeDLWin.DownloadLists(); }
+        private object Activate_12_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
+        private object Activate_17_MainWindow() { return new global::YouTubeDLWin.MainWindow(); }
+        private object Activate_19_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_ProgressBar() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar).TypeHandle);
         private void StaticInitializer_6_ProgressBarTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings).TypeHandle);
         private void StaticInitializer_8_DownloadDialogPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::YouTubeDLWin.DownloadDialogPage).TypeHandle);
-        private void StaticInitializer_11_FirstRunDialogPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::YouTubeDLWin.FirstRunDialogPage).TypeHandle);
-        private void StaticInitializer_12_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::YouTubeDLWin.MainWindow).TypeHandle);
-        private void StaticInitializer_14_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_15_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_11_DownloadLists() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::YouTubeDLWin.DownloadLists).TypeHandle);
+        private void StaticInitializer_12_ProgressRing() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing).TypeHandle);
+        private void StaticInitializer_15_ProgressRingTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings).TypeHandle);
+        private void StaticInitializer_16_FirstRunDialogPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::YouTubeDLWin.FirstRunDialogPage).TypeHandle);
+        private void StaticInitializer_17_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::YouTubeDLWin.MainWindow).TypeHandle);
+        private void StaticInitializer_19_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_20_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -317,7 +332,7 @@ namespace YouTubeDLWin.YouTubeDLWin_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_15_IList(object instance, object item)
+        private void VectorAdd_20_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -397,29 +412,65 @@ namespace YouTubeDLWin.YouTubeDLWin_XamlTypeInfo
                 xamlType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  YouTubeDLWin.FirstRunDialogPage
+            case 11:   //  YouTubeDLWin.DownloadLists
                 userType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.StaticInitializer = StaticInitializer_11_FirstRunDialogPage;
+                userType.Activator = Activate_11_DownloadLists;
+                userType.StaticInitializer = StaticInitializer_11_DownloadLists;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  YouTubeDLWin.MainWindow
-                userType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_12_MainWindow;
-                userType.StaticInitializer = StaticInitializer_12_MainWindow;
-                userType.SetIsLocalType();
+            case 12:   //  Microsoft.UI.Xaml.Controls.ProgressRing
+                userType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_12_ProgressRing;
+                userType.StaticInitializer = StaticInitializer_12_ProgressRing;
+                userType.AddMemberName("IsActive");
+                userType.AddMemberName("IsIndeterminate");
+                userType.AddMemberName("Maximum");
+                userType.AddMemberName("Minimum");
+                userType.AddMemberName("TemplateSettings");
+                userType.AddMemberName("Value");
                 xamlType = userType;
                 break;
 
-            case 13:   //  Microsoft.UI.Xaml.Window
+            case 13:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 14:   //  Double
+                xamlType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 15:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
                 userType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_14_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_14_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_15_ProgressRingTemplateSettings;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 16:   //  YouTubeDLWin.FirstRunDialogPage
+                userType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.StaticInitializer = StaticInitializer_16_FirstRunDialogPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  YouTubeDLWin.MainWindow
+                userType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
+                userType.Activator = Activate_17_MainWindow;
+                userType.StaticInitializer = StaticInitializer_17_MainWindow;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  Microsoft.UI.Xaml.Window
+                xamlType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 19:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+                userType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_19_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_19_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -431,15 +482,15 @@ namespace YouTubeDLWin.YouTubeDLWin_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 15:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 20:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_15_IList;
-                userType.CollectionAdd = VectorAdd_15_IList;
+                userType.StaticInitializer = StaticInitializer_20_IList;
+                userType.CollectionAdd = VectorAdd_20_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Int32
+            case 21:   //  Int32
                 xamlType = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -546,52 +597,107 @@ namespace YouTubeDLWin.YouTubeDLWin_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             return that.TemplateSettings;
         }
-        private object get_5_TreeViewNode_Children(object instance)
+        private object get_5_ProgressRing_IsActive(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.IsActive;
+        }
+        private void set_5_ProgressRing_IsActive(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.IsActive = (global::System.Boolean)Value;
+        }
+        private object get_6_ProgressRing_IsIndeterminate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.IsIndeterminate;
+        }
+        private void set_6_ProgressRing_IsIndeterminate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.IsIndeterminate = (global::System.Boolean)Value;
+        }
+        private object get_7_ProgressRing_Maximum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Maximum;
+        }
+        private void set_7_ProgressRing_Maximum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Maximum = (global::System.Double)Value;
+        }
+        private object get_8_ProgressRing_Minimum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Minimum;
+        }
+        private void set_8_ProgressRing_Minimum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Minimum = (global::System.Double)Value;
+        }
+        private object get_9_ProgressRing_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.TemplateSettings;
+        }
+        private object get_10_ProgressRing_Value(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Value;
+        }
+        private void set_10_ProgressRing_Value(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Value = (global::System.Double)Value;
+        }
+        private object get_11_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_6_TreeViewNode_Content(object instance)
+        private object get_12_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_6_TreeViewNode_Content(object instance, object Value)
+        private void set_12_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_7_TreeViewNode_Depth(object instance)
+        private object get_13_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_8_TreeViewNode_HasChildren(object instance)
+        private object get_14_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_9_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_15_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_9_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_15_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_10_TreeViewNode_IsExpanded(object instance)
+        private object get_16_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_10_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_16_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_11_TreeViewNode_Parent(object instance)
+        private object get_17_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -638,50 +744,91 @@ namespace YouTubeDLWin.YouTubeDLWin_XamlTypeInfo
                 xamlMember.Getter = get_4_ProgressBar_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.IsActive":
+                userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "IsActive", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_ProgressRing_IsActive;
+                xamlMember.Setter = set_5_ProgressRing_IsActive;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.IsIndeterminate":
+                userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_6_ProgressRing_IsIndeterminate;
+                xamlMember.Setter = set_6_ProgressRing_IsIndeterminate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Maximum":
+                userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_7_ProgressRing_Maximum;
+                xamlMember.Setter = set_7_ProgressRing_Maximum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Minimum":
+                userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_8_ProgressRing_Minimum;
+                xamlMember.Setter = set_8_ProgressRing_Minimum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.TemplateSettings":
+                userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings");
+                xamlMember.Getter = get_9_ProgressRing_TemplateSettings;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Value":
+                userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "Value", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_10_ProgressRing_Value;
+                xamlMember.Setter = set_10_ProgressRing_Value;
+                break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_5_TreeViewNode_Children;
+                xamlMember.Getter = get_11_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_TreeViewNode_Content;
-                xamlMember.Setter = set_6_TreeViewNode_Content;
+                xamlMember.Getter = get_12_TreeViewNode_Content;
+                xamlMember.Setter = set_12_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_TreeViewNode_Depth;
+                xamlMember.Getter = get_13_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_14_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_9_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_9_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_15_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_15_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_10_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_16_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_16_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::YouTubeDLWin.YouTubeDLWin_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_11_TreeViewNode_Parent;
+                xamlMember.Getter = get_17_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

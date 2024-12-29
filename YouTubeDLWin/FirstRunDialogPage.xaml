@@ -9,9 +9,38 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <StackPanel>
     <StackPanel
+        x:Name="binDownload"
         Orientation="Vertical"
         HorizontalAlignment="Center"
+        Visibility="Visible"
+        Padding="15">
+            <TextBlock 
+                Text="YouTubeDLWin"
+                HorizontalAlignment="Center"
+                FontSize="25"
+                FontWeight="ExtraBold"
+                />
+
+            <TextBlock 
+                Text="Please Wait as yt-dlp and ffmpeg are downloaded"
+                TextWrapping="Wrap"
+                FontSize="20"
+                Margin="0 0 0 20"
+            />
+
+        <ProgressRing
+            IsActive="True" />
+    </StackPanel>
+    
+    
+    
+    <StackPanel
+        x:Name="firstRun"
+        Orientation="Vertical"
+        HorizontalAlignment="Center"
+        Visibility="Collapsed"
         Padding="20">
 
         <TextBlock 
@@ -60,5 +89,6 @@
                 Margin="0 10 0 10"
                 HorizontalAlignment="Center" VerticalAlignment="Center" />
         </StackPanel>
+    </StackPanel>
     </StackPanel>
 </Page>

@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[1.6.241114003, )"
             },
+            "System.Management": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "YoutubeDLSharp": {
               "target": "Package",
               "version": "[1.1.1, )"

@@ -15,6 +15,8 @@ using Microsoft.UI.Xaml.Navigation;
 using Windows.Storage.Pickers;
 using Windows.Storage;
 using Windows.Storage.AccessCache;
+using System.Threading.Tasks;
+using System.Diagnostics;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -31,9 +33,14 @@ namespace YouTubeDLWin
         public FirstRunDialogPage(Window window)
         {
             this.InitializeComponent();
+
+
+
+
             this.YtDLFolderButton.Content = $@"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}\YoutubeDLWin";
             this.VideoFolderButton.Content = $@"{Environment.GetFolderPath(Environment.SpecialFolder.MyVideos)}\YoutubeDLWin";
             this.AudioFolderButton.Content = $@"{Environment.GetFolderPath(Environment.SpecialFolder.MyMusic)}\YoutubeDLWin";
+
             this.window = window;
             this.config = new AppConfig()
             {
@@ -41,6 +48,13 @@ namespace YouTubeDLWin
                 VideoDownloadLocation = this.VideoFolderButton.Content as string ?? "",
                 AudioDownloadLocation = this.AudioFolderButton.Content as string ?? "",
             };
+        }
+
+        public void Switch()
+        {
+                this.binDownload.Visibility = Visibility.Collapsed;
+                this.firstRun.Visibility = Visibility.Visible;
+                Debug.WriteLine("Switching Done");
         }
 
         private async void GetFolderPath(object sender, RoutedEventArgs e)

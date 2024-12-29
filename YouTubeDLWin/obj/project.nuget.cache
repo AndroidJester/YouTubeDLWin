@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6wKSLjcg+5k=",
+  "dgSpecHash": "URTjVms52F4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Duah1\\source\\repos\\YouTubeDLWin\\YouTubeDLWin\\YouTubeDLWin.csproj",
   "expectedPackageFiles": [
@@ -8,17 +8,19 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.26100.1742\\microsoft.windows.sdk.buildtools.10.0.26100.1742.nupkg.sha512",
     "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.241114003\\microsoft.windowsappsdk.1.6.241114003.nupkg.sha512",
     "C:\\Users\\Duah1\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Duah1\\.nuget\\packages\\system.codedom\\9.0.0\\system.codedom.9.0.0.nupkg.sha512",
+    "C:\\Users\\Duah1\\.nuget\\packages\\system.management\\9.0.0\\system.management.9.0.0.nupkg.sha512",
     "C:\\Users\\Duah1\\.nuget\\packages\\youtubedlsharp\\1.1.1\\youtubedlsharp.1.1.1.nupkg.sha512",
-    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.11\\microsoft.netcore.app.runtime.win-x64.8.0.11.nupkg.sha512",
     "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.11\\microsoft.netcore.app.runtime.win-x86.8.0.11.nupkg.sha512",
-    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\8.0.11\\microsoft.netcore.app.runtime.win-arm64.8.0.11.nupkg.sha512",
-    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.11.nupkg.sha512",
-    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.11.nupkg.sha512",
-    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-arm64.8.0.11.nupkg.sha512",
-    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.11\\microsoft.aspnetcore.app.runtime.win-x64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512",
     "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.11\\microsoft.aspnetcore.app.runtime.win-x86.8.0.11.nupkg.sha512",
+    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\8.0.11\\microsoft.netcore.app.runtime.win-arm64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.11\\microsoft.aspnetcore.app.runtime.win-x64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-arm64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.11.nupkg.sha512",
     "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\8.0.11\\microsoft.aspnetcore.app.runtime.win-arm64.8.0.11.nupkg.sha512",
-    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.11\\microsoft.netcore.app.runtime.win-x64.8.0.11.nupkg.sha512",
+    "C:\\Users\\Duah1\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.11\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.11.nupkg.sha512"
   ],
   "logs": []
 }

@@ -7,12 +7,12 @@ using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using YoutubeDLSharp;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -22,22 +22,18 @@ namespace YouTubeDLWin
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class DownloadDialogPage : Page
+    public sealed partial class DownloadLists : Page
     {
-        public DownloadDialogPage()
+
+        public DownloadLists()
         {
             this.InitializeComponent();
         }
 
-        public void GetProgressData(float progress, string downloadSpeed)
+        public void GetItems(ObservableCollection<DownloadInfo> items)
         {
-            this.ProgressBar.Value = progress;
-            this.DownloadSpeed.Text = downloadSpeed;
-        } 
-
-        public void GetOutput(string output)
-        {
-            this.Output.Text = output;
+            this.DownloadList.ItemsSource = items;
         }
+       
     }
 }
