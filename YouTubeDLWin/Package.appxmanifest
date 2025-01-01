@@ -5,18 +5,19 @@
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
-  IgnorableNamespaces="uap rescap">
+  xmlns:uap18="http://schemas.microsoft.com/appx/manifest/uap/windows10/18"
+  IgnorableNamespaces="uap rescap uap18">
 
   <Identity
-    Name="f3a3ac1d-1b7d-40c2-bc15-ce2c35cd2523"
-    Publisher="CN=Duah1"
+    Name="YouTubeDLWin"
+    Publisher="CN=AndroidJester"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="f3a3ac1d-1b7d-40c2-bc15-ce2c35cd2523" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>YouTubeDLWin</DisplayName>
-    <PublisherDisplayName>Duah1</PublisherDisplayName>
+    <PublisherDisplayName>AndroidJester</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,7 +33,7 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="$targetentrypoint$">
+      EntryPoint="$targetentrypoint$" >
       <uap:VisualElements
         DisplayName="YouTubeDLWin"
         Description="YouTubeDLWin"
@@ -47,5 +48,6 @@
 
   <Capabilities>
     <rescap:Capability Name="runFullTrust" />
+    <Capability Name="internetClient"/>
   </Capabilities>
 </Package>

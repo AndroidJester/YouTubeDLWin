@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35605.110 d17.13
+VisualStudioVersion = 17.13.35605.110
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeDLWin", "YouTubeDLWin\YouTubeDLWin.csproj", "{240A233E-9497-465A-9661-B566E9260FEA}"
 EndProject
@@ -18,9 +18,6 @@ Global
 		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|ARM64.ActiveCfg = Debug|ARM64
 		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|ARM64.Build.0 = Debug|ARM64
 		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|ARM64.Deploy.0 = Debug|ARM64
-		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|x64.ActiveCfg = Debug|x64
-		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|x64.Build.0 = Debug|x64
-		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|x64.Deploy.0 = Debug|x64
 		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|x86.ActiveCfg = Debug|x86
 		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|x86.Build.0 = Debug|x86
 		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|x86.Deploy.0 = Debug|x86
@@ -33,6 +30,9 @@ Global
 		{240A233E-9497-465A-9661-B566E9260FEA}.Release|x86.ActiveCfg = Release|x86
 		{240A233E-9497-465A-9661-B566E9260FEA}.Release|x86.Build.0 = Release|x86
 		{240A233E-9497-465A-9661-B566E9260FEA}.Release|x86.Deploy.0 = Release|x86
+		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|x64.ActiveCfg = Debug|x64
+		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|x64.Build.0 = Debug|x64
+		{240A233E-9497-465A-9661-B566E9260FEA}.Debug|x64.Deploy.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

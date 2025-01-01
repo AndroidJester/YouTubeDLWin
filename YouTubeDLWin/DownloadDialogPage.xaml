@@ -9,7 +9,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Vertical"
+                    Padding="20">
             <ProgressBar
                 x:Name="ProgressBar"
                 Width="200"
@@ -17,7 +18,9 @@
 
             <TextBlock 
                 x:Name="DownloadSpeed"
-                TextWrapping="WrapWholeWords" />
+                TextWrapping="WrapWholeWords" 
+                HorizontalAlignment="Center"
+                />
 
             <TextBlock 
                 x:Name="Output"

@@ -44,6 +44,7 @@ public sealed partial class MainWindow : Window
     private IProgress<string> output;
     private YoutubeDL ytdl;
     private AppConfig config;
+    private ContentDialog inDialog;
     // private ObservableCollection<DownloadInfo> downloadItems;
     // private DownloadLists downloadListPage;
     public MainWindow()
@@ -62,12 +63,18 @@ public sealed partial class MainWindow : Window
         removeWatcher.EventArrived += new EventArrivedEventHandler(DeviceRemovedEvent);
         removeWatcher.Start();
 
-
+        inDialog = new ContentDialog()
+        {
+            XamlRoot = this.Content.XamlRoot,
+            Title = "USB Inserted",
+            Content = "Downloads would be stored at the current inserted USB drive until the application is closed",
+            PrimaryButtonText = "Confirm"
+        };
 
 
         var root = Content as FrameworkElement;
         config = AppConfig.ReadJsonFile();
-
+        
         if (root != null) root.Loaded += (s, e) => firstLaunched();
         ytdl = new YoutubeDL()
         {
@@ -85,17 +92,13 @@ public sealed partial class MainWindow : Window
             EmbedChapters.Visibility = Visibility.Visible;
         }
 
-        // DownloadInfoList.Visibility = Visibility.Collapsed;
-        // downloadItems = new ObservableCollection<DownloadInfo>();
-        // downloadListPage = new DownloadLists();
-        // downloadListPage.GetItems(downloadItems);
     }
 
 
-    private void DeviceInsertedEvent(object sender, EventArrivedEventArgs e)
+    private async void DeviceInsertedEvent(object sender, EventArrivedEventArgs e)
     {
-        //ManagementBaseObject instance = (ManagementBaseObject)e.NewEvent["TargetInstance"];
         config.AddExternalStorage();
+        
     }
 
     private void DeviceRemovedEvent(object sender, EventArrivedEventArgs e)
@@ -169,6 +172,21 @@ public sealed partial class MainWindow : Window
             //     Debug.WriteLine("Download Cancelled or Completed");
             // }
         });
+        
+        if(this.UrlVideo.Text == "")
+        {
+            var cDialog = new ContentDialog()
+            {
+                XamlRoot = this.Content.XamlRoot,
+                Title = "Empty String",
+                PrimaryButtonText = "Ok",
+                Content = "No URL provided",
+            };
+            await cDialog.ShowAsync();
+            return;
+        }
+
+
         output = new Progress<string>((s) =>
         {
             //downloadItem.Output = s;
@@ -177,19 +195,7 @@ public sealed partial class MainWindow : Window
         });
 
 
-        var options = new OptionSet()
-        {
-            RecodeVideo = VideoRecodeFormat.Mkv,
-            ExtractAudio = !VideoAudioChoice.IsChecked ?? false,
-            AudioFormat = AudioConversionFormat.Mp3,
-            RemuxVideo = "mkv",
-            EmbedThumbnail = true,
-            EmbedMetadata = true,
-            EmbedInfoJson = true,
-            EmbedSubs = Subtitles.IsChecked ?? false,
-            EmbedChapters = EmbedChapters.IsChecked ?? true,
-            Output = getDownloadPath(VideoAudioChoice.IsChecked ?? false, UrlVideo.Text.Contains("playlist"))
-        };
+        
 
         var ct = new CancellationTokenSource();
 
@@ -206,11 +212,35 @@ public sealed partial class MainWindow : Window
 
             if (VideoAudioChoice.IsChecked ?? false)
             {
+                var options = new OptionSet()
+                {
+                    RecodeVideo = VideoRecodeFormat.Mkv,
+                    ExtractAudio = !VideoAudioChoice.IsChecked ?? false,
+                    AudioFormat = AudioConversionFormat.Mp3,
+                    RemuxVideo = "mkv",
+                    EmbedThumbnail = true,
+                    EmbedMetadata = true,
+                    EmbedInfoJson = true,
+                    EmbedSubs = Subtitles.IsChecked ?? false,
+                    EmbedChapters = EmbedChapters.IsChecked ?? true,
+                    Output = getDownloadPath(VideoAudioChoice.IsChecked ?? false, UrlVideo.Text.Contains("playlist"))
+                };
                 result = await ytdl.RunVideoDownload(UrlVideo.Text, progress: progress, output: output,
                     overrideOptions: options, ct: ct.Token);
             }
             else
             {
+                var options = new OptionSet()
+                {
+                    ExtractAudio = true,
+                    AudioFormat = AudioConversionFormat.Mp3,
+                    EmbedThumbnail = true,
+                    EmbedMetadata = true,
+                    EmbedInfoJson = true,
+                    EmbedSubs = Subtitles.IsChecked ?? false,
+                    EmbedChapters = EmbedChapters.IsChecked ?? true,
+                    Output = getDownloadPath(VideoAudioChoice.IsChecked ?? false, UrlVideo.Text.Contains("playlist"))
+                };
                 result = await ytdl.RunAudioDownload(UrlVideo.Text, progress: progress, output: output,
                     overrideOptions: options, ct: ct.Token);
             }

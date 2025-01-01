@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.22000.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>YouTubeDLWin</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <Platforms>x86;x64;ARM64</Platforms>
-    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <Platforms>x86;x64</Platforms>
+    <RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
     <PublishProfile>win-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
@@ -73,9 +73,21 @@
 
   <!-- Publish Properties -->
   <PropertyGroup>
+	  <WindowsPackageType>None</WindowsPackageType>
+      <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <PublishReadyToRun Condition="'$(Configuration)' == 'Debug'">False</PublishReadyToRun>
     <PublishReadyToRun Condition="'$(Configuration)' != 'Debug'">True</PublishReadyToRun>
     <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
     <PublishTrimmed Condition="'$(Configuration)' != 'Debug'">True</PublishTrimmed>
+    <PackageCertificateThumbprint>5B58AEDC3BBAE3C46ACA70C009824D0A7BCB54D1</PackageCertificateThumbprint>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <AppxBundle>Always</AppxBundle>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
   </PropertyGroup>
 </Project>

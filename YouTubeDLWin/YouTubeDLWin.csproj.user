@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ActiveDebugProfile>YouTubeDLWin (Unpackaged)</ActiveDebugProfile>
+    <_LastSelectedProfileId>C:\Users\Duah1\source\repos\YouTubeDLWin\YouTubeDLWin\Properties\PublishProfiles\win-x64.pubxml</_LastSelectedProfileId>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
   <ItemGroup>
     <None Update="App.xaml">
       <SubType>Designer</SubType>

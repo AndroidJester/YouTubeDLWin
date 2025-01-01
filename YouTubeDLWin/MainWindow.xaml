@@ -16,18 +16,37 @@
 
 
         <TextBlock
+            HorizontalAlignment="Center"
+            TextWrapping="Wrap"
             Text="Welcome to YouTubeDLWin"
             FontSize="25" />
 
         <TextBlock
-            Padding="0 10 10 25"
-            HorizontalAlignment="Left"
+            HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Text="Place a YouTube Url in the TextBox" />
+            FontSize="15"
+            Text="Insert a USB storage drive to change download location" />
+
+        <TextBlock
+            Padding="0 0 0 30"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="15"
+            Text="Unfortunately due to limitations of the app, the USB drive is only detected on insert" />
+
+        <TextBlock
+        Padding="0 10 10 25"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        FontSize="20"
+        Text="Place a YouTube Url in the TextBox" />
 
 
         <TextBox
-            x:Name="UrlVideo" />
+            TextWrapping='Wrap'
+            Width="600"
+             AutomationProperties.Name="multi-line TextBox"
+             x:Name="UrlVideo" />
 
 
         <Button

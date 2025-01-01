@@ -221,198 +221,6 @@
         }
       }
     },
-    "net8.0-windows10.0.19041/win-arm64": {
-      "Microsoft.Web.WebView2/1.0.2651.64": {
-        "type": "package",
-        "native": {
-          "runtimes/win-arm64/native/WebView2Loader.dll": {}
-        },
-        "build": {
-          "build/Microsoft.Web.WebView2.targets": {}
-        }
-      },
-      "Microsoft.Windows.SDK.BuildTools/10.0.26100.1742": {
-        "type": "package",
-        "build": {
-          "buildTransitive/Microsoft.Windows.SDK.BuildTools.props": {},
-          "buildTransitive/Microsoft.Windows.SDK.BuildTools.targets": {}
-        }
-      },
-      "Microsoft.WindowsAppSDK/1.6.241114003": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Web.WebView2": "1.0.2651.64",
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756"
-        },
-        "compile": {
-          "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Builder.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Management.Deployment.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Security.AccessControl.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Storage.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Builder.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Management.Deployment.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Security.AccessControl.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Storage.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {
-            "related": ".xml"
-          },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
-        },
-        "native": {
-          "runtimes/win-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
-        },
-        "build": {
-          "buildTransitive/Microsoft.WindowsAppSDK.props": {},
-          "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
-        }
-      },
-      "Newtonsoft.Json/13.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.CodeDom/9.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.CodeDom.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/System.CodeDom.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.Management/9.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.CodeDom": "9.0.0"
-        },
-        "compile": {
-          "lib/net8.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net8.0/System.Management.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "YoutubeDLSharp/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "lib/net8.0/YoutubeDLSharp.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/YoutubeDLSharp.dll": {
-            "related": ".xml"
-          }
-        }
-      }
-    },
     "net8.0-windows10.0.19041/win-x64": {
       "Microsoft.Web.WebView2/1.0.2651.64": {
         "type": "package",
@@ -1738,19 +1546,11 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
             "version": "[8.0.11, 8.0.11]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.win-arm64",
             "version": "[8.0.11, 8.0.11]"
           },
           {
@@ -1764,10 +1564,6 @@
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
             "version": "[10.0.19041.57, 10.0.19041.57]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
-            "version": "[8.0.11, 8.0.11]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
@@ -1790,9 +1586,6 @@
       }
     },
     "runtimes": {
-      "win-arm64": {
-        "#import": []
-      },
       "win-x64": {
         "#import": []
       },

@@ -42,6 +42,7 @@ namespace YouTubeDLWin
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
             m_window = new MainWindow();
+            m_window.ExtendsContentIntoTitleBar = true;
             m_window.Activate();
             
         }

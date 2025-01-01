@@ -12,6 +12,7 @@
     <StackPanel>
         <TextBlock 
            Text="Download Progress"
+           
         />
         <ListView 
         x:Name="DownloadList">
